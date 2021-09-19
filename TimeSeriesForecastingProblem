@@ -1,0 +1,27 @@
+Overview
+
+Business value: 
+- forecasting my gas bill will help me anticipate future scenarios and take corrective action if needed
+- potential to more effectively meet my monthly budget if I can anticipate future gas bills
+- avoid surprises in monthly budget when gas bill is higher than average due to seasonality
+
+Desired outcomes: 
+- develop a time series forecast (prediction) quickly in the various tools and platforms available
+- compare speed, ease of use, and repeatability across tools
+  - consider BigQuery ML
+  - consider Google autoML (like autoML tables)
+  - consider Python packages for traditional statistical forecasting statsmodels 
+      and more recent packages focused on ML approaches (like LSTM in the RNN family)
+        example: https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/
+  - consider Excel's "forecast sheet" concept to develop the fastest scrappy baseline forecast possible
+    -explore additional timeseries forecasting approaches/functions in excel, if any exist
+
+
+Learned: PARSE_DATETIME in BigQuery to deal with CSV data format from input file.
+Link to BigQuery documentation: https://cloud.google.com/bigquery/docs/reference/standard-sql/datetime_functions#parse_datetime
+
+BiqQuery Timeseries forecasting tutorial: 
+https://cloud.google.com/bigquery-ml/docs/arima-single-time-series-forecasting-tutorial
+
+BigQuery Create Model syntax for reference: 
+https://cloud.google.com/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-create-time-series
